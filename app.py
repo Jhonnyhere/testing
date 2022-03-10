@@ -22,8 +22,6 @@ class students(db.Model):
         self.pin = pin
         
         
-        
-
 @app.route('/')
 def show_all():
    return render_template('show_all.html', students = students.query.all() )
